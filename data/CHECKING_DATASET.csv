@@ -1,0 +1,4 @@
+# EXAMPLE OF DATASET STRUCTURE - NOT FOR USE
+prompt,completion
+"[{'task': 'check_translation'}, {'ORIGINAL': 'Me gusta mucho aprender idiomas y ahora estudio español inglés y un poco de italiano'}, {'USER': 'I like learning languages a lot, and now I study Spanish, English, and a bit of Italian.'}]","[{'FIXED': 'I like learning languages a lot, and now I study Spanish, English, and a bit of Italian.'}, {'RATE': '5'}]"
+"[{'task': 'check_translation'}, {'ORIGINAL': 'Este libro es más interesante'}, {'USER': 'This book is boring and full of mistakes.'}]","[{'FIXED': 'This book is more interesting.'}, {'RATE': '2'}]"

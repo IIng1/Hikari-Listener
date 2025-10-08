@@ -1,0 +1,4 @@
+# EXAMPLE OF DATASET STRUCTURE - NOT FOR USE
+prompt,completion
+"[{'task': 'text_generation'}, {'language': 'Spanish'}, {'level': 'CEFR A1'}, {'text_type': 'sentence'}, {'text_lenght': '5-10'}]",Hola cómo estás
+"[{'task': 'text_generation'}, {'language': 'Spanish'}, {'level': 'CEFR C2'}, {'text_type': 'sentence'}, {'text_lenght': '35-50'}]",La reflexión ética sobre el impacto de las decisiones tecnológicas en el medio ambiente y la sociedad es un imperativo para orientar el desarrollo hacia modelos más sostenibles y responsables
