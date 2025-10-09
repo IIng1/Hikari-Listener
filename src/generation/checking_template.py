@@ -17,8 +17,19 @@ def s(original_text, user_text):
         add_generation_prompt=True
     )
 
-    return inference(
+    result = inference(
         LoRA_id=1,
         temperature=settings.checking_temperature,
         text=text
     )
+
+    # FIXED :: JSON parsing error --------------------------------------------------------------------------------------
+    # The following two lines fix a JSON parsing error caused by apostrophes (') being used as string delimiters.
+    # When a word inside the string contains an apostrophe, the JSON parser mistakenly treats it as the end of the string,
+    # resulting in an invalid JSON format.
+    # By replacing apostrophes with double quotation marks ("), we ensure that the JSON string is correctly parsed.
+    # ------------------------------------------------------------------------------------------------------------------
+    result = result.replace("[{'FIXED': '", "[{'FIXED': \"")
+    result = result.replace("'}, {'RATE'", "\"}, {'RATE'")
+
+    return result
